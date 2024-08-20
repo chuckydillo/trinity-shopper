@@ -60,7 +60,7 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
 
     const unitMeasurementSpan = document.createElement('span');
     unitMeasurementSpan.textContent = unitMeasurementValue;
-    quantitySpan.id = 'ingrident-unit-measurement';
+    unitMeasurementSpan.id = 'ingrident-unit-measurement';
 
     // Append the list item
     document.getElementById("recipeList").appendChild(listItem);
