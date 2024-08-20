@@ -27,9 +27,9 @@
                     </div> 
                     <!--Area to input ingridents for recipe-->
                     <div class="form-ingrident-input">
-                        <input id="ingridentName" type="text" placeholder="ingrident">
-                        <input id="quantity" type="number" placeholder="Quantity">
-                        <select id="unitMeasurement" name="Units">
+                        <input id="ingridentName" type="text" placeholder="ingrident"><!--Ingredient name-->
+                        <input id="quantity" type="number" placeholder="Quantity"><!--Quantity-->
+                        <select id="unitMeasurement" name="Units"><!--Units of measurement selector-->
                             <option value="grams">grams</option>
                             <option value="ml">ml</option>
                             <option value="oz">oz</option>
@@ -38,13 +38,19 @@
                             <option value="cup">cup</option>
                             <option value="unit">unit</option>
                         </select>
-                        <button type="button" id="ingridentAdd">Add Item</button>                        
+                        <button type="button" id="ingridentAdd">Add Item</button>
+                        <!--Ingredient list output-->
+                        <ol id="recipeList" class="recipe-form-out-ingrident"></ol>                        
                     </div>
                     <div class="recipe-form-output">
                         <h3 id="printRecipeName" class="recipe-form-out-recipe-name"></h3>
                         <p id="print-recipe-description" class="recipe-description-out"></p>
-                        <ol id="recipeList" class="recipe-form-out-ingrident"></ol>
                     </div>
+                    <!--recipe instructions-->
+                    <div class="">
+                        <textarea name="recipe-instructions" id="recipe-instructions"></textarea>
+                    </div>
+                    <!--Submit form-->
                     <div>
                         <button type="Submit" id="ingridentSubmit">Confirm Recipe</button>
                     </div>
