@@ -71,6 +71,7 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
     listItem.appendChild(unitMeasurementSpan);
 
     let rmvBtn = document.createElement('span');
+    rmvBtn.textContent = 'Remove';
     rmvBtn.classList.add('remove');
     listItem.append(rmvBtn);
     rmvBtn.addEventListener('click' , deleteItem);
