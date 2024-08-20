@@ -6,38 +6,33 @@ body {
 
 /*JS Script remove button */
 .remove {
-    position: absolute;
-    top: 5px;
-    right:0;
-    width: 25px;
-    height: 25px;
-    background-color: black;
-    border-radius: 50%;;
+    position: relative;
+    background-color: red;
     background-size: cover;
     cursor: pointer;
+    padding: auto;
 }
 
 /*Page Create Recipe */
 
 .form-recipe-input {
-    display: flex;
-    justify-content: center;
-    height: auto;
+
     
 }
 
 .recipe-form-output {
-    display: flex;
-    justify-content: center;
-    height: auto;
+
 }
 
 .recipe-form-out-recipe-name{
-    display: flex;
-    justify-content: center;
-    height: auto;
+
 }
 
 .recipe-form-out-ingrident {
+
+}
+
+.recipe-form-out-ingrident .remove {
+
 }
 
