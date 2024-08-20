@@ -2,7 +2,6 @@ console.log("connected")
 
 
 const form = document.getElementById('recipeForm');
-const recipeName = document.getElementById('recipeName');
 const recipeList = document.getElementById('recipeList');
 const recipeButton = document.getElementById('recipeButton');
 const ingridentButton = document.getElementById('ingridentButton');
@@ -81,3 +80,16 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
 function deleteItem(e){
     this.parentElement.remove();  
 }
+
+// JS to disable and edit elements on button press
+const recipeName = document.getElementById('recipe-name');
+const confirmRecipeName = document.getElementById('confirm-input-recipe-name');
+const editRecipeName = document.getElementById('edit-input-recipe-name');
+
+confirmRecipeName.addEventListener('click', function() {
+    recipeName.disabled = true;
+});
+
+editRecipeName.addEventListener('click', function() {
+    recipeName.disabled = false;
+});
