@@ -1,25 +1,5 @@
 console.log("connected")
 
-//let grocery = document.getElementById('grocery');
-//grocery.addEventListener('submit', addItem);
-//function addItem(e){
-//e.preventDefault();
-//let data = this.elements.writeList.value;
-//let list = document.querySelector('ol');
-//let item = document.createElement('li');
-//let text = document.createElement('p');
-
-//text.textContent = data;
-//this.elements.writeList.value = "";
-//item.append(text);
-//list.append(item);
-
-//let rmvBtn = document.createElement('span');
-//rmvBtn.classList.add('remove');
-//item.append(rmvBtn);
-//rmvBtn.addEventListener('click' , deleteItem);
-//}
-
 
 const form = document.getElementById('recipeForm');
 const recipeName = document.getElementById('recipeName');
@@ -27,6 +7,8 @@ const recipeList = document.getElementById('recipeList');
 const recipeButton = document.getElementById('recipeButton');
 const ingridentButton = document.getElementById('ingridentButton');
 const PrintRecipeName = document.getElementById('PrintRecipeName');
+
+
 
 
 //function for creating recipe name
@@ -50,10 +32,10 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
     const quantityValue = document.getElementById('quantity').value;
     const unitMeasurementValue = document.getElementById('unitMeasurement').value;
 
-    // Create the list item
+    // Create the list element
     const listItem = document.createElement('li');
 
-    // Create the span elements
+    // Create the span elements with id
     const ingridentNameSpan = document.createElement('span');
     ingridentNameSpan.textContent = ingridentNameValue;
     ingridentNameSpan.id = 'ingrident-name';
@@ -66,13 +48,13 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
     unitMeasurementSpan.textContent = unitMeasurementValue;
     quantitySpan.id = 'ingrident-unit-measurement';
 
-    // Append the spans to the list item
+    // Append the list item
+    document.getElementById("recipeList").appendChild(listItem);
+
+    // Append the spans to the list elelement
     listItem.appendChild(ingridentNameSpan);
     listItem.appendChild(quantitySpan);
     listItem.appendChild(unitMeasurementSpan);
-
-    // Append the list item to the details list
-    document.getElementById("recipeList").appendChild(listItem);
 
     let rmvBtn = document.createElement('span');
     rmvBtn.classList.add('remove');

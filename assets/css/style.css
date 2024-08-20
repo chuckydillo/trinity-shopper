@@ -21,22 +21,23 @@ body {
 
 .form-recipe-input {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     height: auto;
     
-
-
 }
 
 .recipe-form-output {
-
+    display: flex;
+    justify-content: center;
+    height: auto;
 }
 
 .recipe-form-out-recipe-name{
-    
+    display: flex;
+    justify-content: center;
+    height: auto;
 }
 
 .recipe-form-out-ingrident {
-
 }
 
