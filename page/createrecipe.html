@@ -15,9 +15,15 @@
             <div class="controls-area">
                 <h2>Recipe Name</h2>
                 <form id="recipeForm">
+                    <!--Recipe name-->
                     <div class="form-recipe-input">
                         <input id="recipeName" type="text" placeholder="Recipe Name">
                         <button type="button" id="recipeButton">Confirm Name</button>
+                    </div>
+                    <!--Recipe Description-->
+                    <div>
+                        <textarea id="recipe-description" name="recipe-description"></textarea>
+                        <button type="button" id="recipe-description-button">Confirm Name</button>
                     </div> 
                     <!--Area to input ingridents for recipe-->
                     <div class="form-ingrident-input">
@@ -36,6 +42,7 @@
                     </div>
                     <div class="recipe-form-output">
                         <h3 id="printRecipeName" class="recipe-form-out-recipe-name"></h3>
+                        <p id="print-recipe-description" class="recipe-description-out"></p>
                         <ol id="recipeList" class="recipe-form-out-ingrident"></ol>
                     </div>
                     <div>

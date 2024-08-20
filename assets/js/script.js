@@ -24,6 +24,20 @@ document.getElementById('recipeButton').addEventListener('click', function() {
         printRecipeNameElement.textContent = recipeName;
 });
 
+//function for creating recipe description
+document.getElementById('recipe-description-button').addEventListener('click', function() {
+
+    // Get the value from the input field
+    const recipeName = document.getElementById('recipe-description').value;
+
+    // Get the element where the recipe name will be printed
+    const printRecipeNameElement = document.getElementById('print-recipe-description');
+
+    // Set the text content of the output element to the recipe name
+    printRecipeNameElement.textContent = recipeName;
+});
+
+
 
 document.getElementById('ingridentAdd').addEventListener('click', function() {
 
