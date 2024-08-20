@@ -21,18 +21,6 @@ editRecipeName.addEventListener('click', function() {
 });
 
 
-//function for creating recipe name
-document.getElementById('recipeButton').addEventListener('click', function() {
-
-        // Get the value from the input field
-        const recipeName = document.getElementById('recipeName').value;
-
-        // Get the element where the recipe name will be printed
-        const printRecipeNameElement = document.getElementById('printRecipeName');
-
-        // Set the text content of the output element to the recipe name
-        printRecipeNameElement.textContent = recipeName;
-});
 
 //function for creating recipe description
 document.getElementById('recipe-description-button').addEventListener('click', function() {
