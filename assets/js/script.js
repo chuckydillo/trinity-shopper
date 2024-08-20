@@ -7,7 +7,18 @@ const recipeButton = document.getElementById('recipeButton');
 const ingridentButton = document.getElementById('ingridentButton');
 const PrintRecipeName = document.getElementById('PrintRecipeName');
 
+// JS to disable and edit elements on button press
+const recipeName = document.getElementById('recipe-name');
+const confirmRecipeName = document.getElementById('confirm-input-recipe-name');
+const editRecipeName = document.getElementById('edit-input-recipe-name');
 
+confirmRecipeName.addEventListener('click', function() {
+    recipeName.disabled = true;
+});
+
+editRecipeName.addEventListener('click', function() {
+    recipeName.disabled = false;
+});
 
 
 //function for creating recipe name
@@ -81,15 +92,3 @@ function deleteItem(e){
     this.parentElement.remove();  
 }
 
-// JS to disable and edit elements on button press
-const recipeName = document.getElementById('recipe-name');
-const confirmRecipeName = document.getElementById('confirm-input-recipe-name');
-const editRecipeName = document.getElementById('edit-input-recipe-name');
-
-confirmRecipeName.addEventListener('click', function() {
-    recipeName.disabled = true;
-});
-
-editRecipeName.addEventListener('click', function() {
-    recipeName.disabled = false;
-});
