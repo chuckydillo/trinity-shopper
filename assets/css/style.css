@@ -4,6 +4,7 @@ body {
 
 
 
+/*JS Script remove button */
 .remove {
     position: absolute;
     top: 5px;
@@ -15,3 +16,27 @@ body {
     background-size: cover;
     cursor: pointer;
 }
+
+/*Page Create Recipe */
+
+.form-recipe-input {
+    display: flex;
+    justify-content: left;
+    height: auto;
+    
+
+
+}
+
+.recipe-form-output {
+
+}
+
+.recipe-form-out-recipe-name{
+    
+}
+
+.recipe-form-out-ingrident {
+
+}
+
