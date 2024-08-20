@@ -11,14 +11,15 @@
         <div class="recipe-form">
             <div class="controls-area">
                 <h2>Recipe Name</h2>
-                <form id="grocery">
+                <form id="recipeForm">
                     <div>
-                        <input type="text" placeholder="Recipe Name">
+                        <input id="recipeName" type="text" placeholder="Recipe Name">
+                        <button type="button" id="recipeButton">Confirm Name</button>
                     </div> 
                     <div>
-                        <input id="writeList" type="text" placeholder="ingrident">
-                        <input id="quantityList" type="number" placeholder="Quantity">
-                        <select id="unit-measurement" name="Units">
+                        <input id="ingridentName" type="text" placeholder="ingrident">
+                        <input id="quantity"  type="number" placeholder="Quantity">
+                        <select id="unitMeasurement" name="Units">
                             <option value="grams">grams</option>
                             <option value="ml">ml</option>
                             <option value="oz">oz</option>
@@ -26,11 +27,17 @@
                             <option value="pint">pint</option>
                             <option value="cup">cup</option>
                         </select>
-                        <button>Add Item</button>                        
+                        <button type="button" id="ingridentSubmit">Add Item</button>                        
                     </div>
-
+                    <div>
+                        <h3 id="printRecipeName"></h3>
+                        <ul id="recipeList"></ul>
+                    </div>>
+                    <div>
+                        <button type="Submit" id="ingridentSubmit">Confirm Recipe</button>
+                    </div>
                 </form>
-                <ol></ol>
+
             </div>
             
         </div>
