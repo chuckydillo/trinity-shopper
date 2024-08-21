@@ -11,8 +11,6 @@ const recipeName = document.getElementById('recipe-name');
 const confirmRecipeName = document.getElementById('confirm-input-recipe-name');
 const editRecipeName = document.getElementById('edit-input-recipe-name');
 
-
-
 confirmRecipeName.addEventListener('click', function() {
     recipeName.disabled = true;
 });
@@ -32,20 +30,6 @@ confirmRecipeDescription.addEventListener('click', function() {
 
 editRecipeDescription.addEventListener('click', function() {
     recipeDescription.disabled = false;
-});
-
-
-//function for creating recipe description
-document.getElementById('recipe-description-button').addEventListener('click', function() {
-
-    // Get the value from the input field
-    const recipeName = document.getElementById('recipe-description').value;
-
-    // Get the element where the recipe name will be printed
-    const printRecipeNameElement = document.getElementById('print-recipe-description');
-
-    // Set the text content of the output element to the recipe name
-    printRecipeNameElement.textContent = recipeName;
 });
 
 
