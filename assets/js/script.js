@@ -1,11 +1,6 @@
 console.log("connected")
 
 
-const form = document.getElementById('recipeForm');
-const recipeList = document.getElementById('recipeList');
-const recipeButton = document.getElementById('recipeButton');
-const ingridentButton = document.getElementById('ingridentButton');
-
 // Recipe name enable/disable 
 const recipeName = document.getElementById('recipe-name');
 const confirmRecipeName = document.getElementById('confirm-input-recipe-name');
