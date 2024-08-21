@@ -32,19 +32,16 @@ editRecipeDescription.addEventListener('click', function() {
     recipeDescription.disabled = false;
 });
 
-
-
+// JS for adding ingredients
 document.getElementById('ingridentAdd').addEventListener('click', function() {
 
-    // Get the values from the input fields
+    // Gets the values from the input fields
     const ingridentNameValue = document.getElementById('ingridentName').value;
     const quantityValue = document.getElementById('quantity').value;
     const unitMeasurementValue = document.getElementById('unitMeasurement').value;
 
-    // Create the list element
+    // Create elements section along with IDs
     const listItem = document.createElement('li');
-
-    // Create the span elements with id
     const ingridentNameSpan = document.createElement('span');
     ingridentNameSpan.textContent = ingridentNameValue;
     ingridentNameSpan.id = 'ingrident-name';
@@ -57,7 +54,7 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
     unitMeasurementSpan.textContent = unitMeasurementValue;
     unitMeasurementSpan.id = 'ingrident-unit-measurement';
 
-    // Append the list item
+    // Append the list element
     document.getElementById("recipeList").appendChild(listItem);
 
     // Append the spans to the list elelement
@@ -65,6 +62,7 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
     listItem.appendChild(quantitySpan);
     listItem.appendChild(unitMeasurementSpan);
 
+    // Remove button for list element
     let rmvBtn = document.createElement('span');
     rmvBtn.textContent = 'Remove';
     rmvBtn.classList.add('remove');
@@ -72,7 +70,7 @@ document.getElementById('ingridentAdd').addEventListener('click', function() {
     rmvBtn.addEventListener('click' , deleteItem);
 });
 
-
+// JS for deleting recipe ingredient list elements
 function deleteItem(e){
     this.parentElement.remove();  
 }
