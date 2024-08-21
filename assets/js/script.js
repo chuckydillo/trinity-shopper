@@ -82,3 +82,15 @@ confirmRecipeinstructions.addEventListener('click', function() {
 editRecipeinstructions.addEventListener('click', function() {
     recipeinstructions.disabled = false;
 });
+
+// JS for popup to confirm form submit
+
+document.getElementById('recipe-submit').addEventListener('click', function() {
+    const confimSubmit = confirm('Are you ready to submit your recipe?');
+
+if (confimSubmit) {
+    alert('Recipe Saved');
+} else {
+    alert('Cancelled Submit');
+}
+});
