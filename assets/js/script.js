@@ -75,3 +75,15 @@ function deleteItem(e){
     this.parentElement.remove();  
 }
 
+// Recipe instructions enable/disable 
+const recipeinstructions = document.getElementById('recipe-instructions');
+const confirmRecipeinstructions = document.getElementById('confirm-input-recipe-instructions');
+const editRecipeinstructions = document.getElementById('edit-input-recipe-instructions');
+
+confirmRecipeinstructions.addEventListener('click', function() {
+    recipeinstructions.disabled = true;
+});
+
+editRecipeinstructions.addEventListener('click', function() {
+    recipeinstructions.disabled = false;
+});
