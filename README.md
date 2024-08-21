@@ -4,6 +4,16 @@ Trinity Planner is made with the goal of helping people add and find delicious r
 
 ## List of features
 
+ - Navigation Bar
+	 - Navigation bar featured on each page
+ - Landing Page
+ - Saved Recipe
+ - New Recipe
+ - Community Recipes
+ - Generate Shopping List
+ - Setting
+ - Account
+
 ## UX/UI
 
 ## Testing
