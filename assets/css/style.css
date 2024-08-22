@@ -35,31 +35,30 @@ body {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-item a:hover {
     background-color: #f1f1f1;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-item {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+
 .dropdown:hover .dropdown-button {
     background-color: #A6B37D;
 }
 
 .dropdown ul {
     list-style-type: none;
-    list-style-type: none; /* Remove bullets or numbers */
-    
+    list-style-type: none;
+
 
 }
 
 .dropdown li {
     padding: 10px 0; /* Add padding to create space between list items */
-    border-bottom: 1px solid #ddd; /* Optional: add a bottom border for visual separation */
 }
 
 
