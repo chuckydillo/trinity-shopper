@@ -1,5 +1,8 @@
 body {
     background: #C0C78C;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -89,10 +92,8 @@ body {
 
 /*Page Create Recipe */
 
-body {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
+.controls-area {
+    text-align: center;
 }
 
 input[type="text"] {
