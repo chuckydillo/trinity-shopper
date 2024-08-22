@@ -1,4 +1,4 @@
-console.log("connected")
+console.log("js connected")
 
 
 // Recipe name enable/disable 

@@ -1,3 +1,4 @@
+console.log("nav bar connected")
 
 //navbar
 

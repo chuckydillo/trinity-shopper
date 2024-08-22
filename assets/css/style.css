@@ -1,6 +1,67 @@
 body {
-    background: rgb(139, 107, 107);
+    background: #C0C78C;
 }
+
+
+/*Nav Menu*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-button {
+    background-color: #B99470;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-item a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-item a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-item {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdown-button {
+    background-color: #A6B37D;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    list-style-type: none; /* Remove bullets or numbers */
+    
+
+}
+
+.dropdown li {
+    padding: 10px 0; /* Add padding to create space between list items */
+    border-bottom: 1px solid #ddd; /* Optional: add a bottom border for visual separation */
+}
+
 
 
 
@@ -15,24 +76,41 @@ body {
 
 /*Page Create Recipe */
 
-.form-recipe-input {
-
-    
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.recipe-form-output {
+input[type="text"] {
+    background-color: #FEFAE0;
+}
+
+input[type="number"] {
+    background-color: #FEFAE0;
+}
+
+input[placeholder] {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
 
 }
 
-.recipe-form-out-recipe-name{
-
+textarea {
+    background-color: #FEFAE0;
 }
 
-.recipe-form-out-ingrident {
-
+div {
+    padding: 20px
 }
 
-.recipe-form-out-ingrident .remove {
-
+#recipe-description {
+    width: 350px;
+    height: 100px;
 }
 
+#recipe-instructions {
+    width: 600px;
+    height: 300px
+}
