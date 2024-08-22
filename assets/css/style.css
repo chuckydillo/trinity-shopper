@@ -3,8 +3,13 @@ body {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
+    padding-bottom: 100%;
 }
 
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
 
 /*index*/
 .index-logo {
@@ -24,24 +29,28 @@ body {
 }
 
 /*Nav Menu*/
+#navbar-container {
+    text-align: center;
+}
 
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 .dropdown-button {
     background-color: #B99470;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding:30px 100px;
+    font-size: 30px;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
+
 
 .dropdown-item {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -63,6 +72,7 @@ body {
 
 .dropdown:hover .dropdown-item {
     display: block;
+
 }
 
 
@@ -72,13 +82,15 @@ body {
 
 .dropdown li {
     list-style-type: none;
+    text-align: center;
+    text-decoration: none;
 }
 
-.dropdown li {
-    padding: 10px 0;
+.dropdown a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 5px;
 }
-
-
 
 
 /*JS Script remove button */
@@ -108,7 +120,6 @@ input[placeholder] {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: italic;
-
 }
 
 textarea {
@@ -116,7 +127,23 @@ textarea {
 }
 
 div {
-    padding: 20px
+    padding: 10px;
+}
+
+.recipe-form-out-ingrident {
+    list-style-type: none;
+}
+
+#ingrident-name {
+    padding: 10px;
+}
+
+#ingrident-quantity {
+    padding: 10px;
+}
+
+#ingrident-unit-measurement {
+    padding: 10px;
 }
 
 #recipe-description {
