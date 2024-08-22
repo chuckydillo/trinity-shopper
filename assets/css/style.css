@@ -3,6 +3,17 @@ body {
 }
 
 
+/*index*/
+.index-navbar li {
+    list-style-type: none;
+}
+
+.index-navbar a {
+    text-decoration: none;
+    color: inherit;        
+
+}
+
 /*Nav Menu*/
 
 .dropdown {
@@ -50,15 +61,12 @@ body {
     background-color: #A6B37D;
 }
 
-.dropdown ul {
+.dropdown li {
     list-style-type: none;
-    list-style-type: none;
-
-
 }
 
 .dropdown li {
-    padding: 10px 0; /* Add padding to create space between list items */
+    padding: 10px 0;
 }
 
 
