@@ -4,6 +4,9 @@ body {
 
 
 /*index*/
+.index-navbar {
+    text-align: center;
+}
 .index-navbar li {
     list-style-type: none;
 }
