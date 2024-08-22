@@ -2,17 +2,25 @@
 
 Trinity Planner is made with the goal of helping people add and find delicious recipes along with helping them save money and optimising their shopping. Trinity Planner will aid people that struggle to plan meals, recipes and shop for the required ingredients.
 
+[Trinity Planner](https://chuckydillo.github.io/trinity-shopper/)
+
 ## List of features
 
  - Navigation Bar
 	 - Navigation bar featured on each page
+	 - ![Wireframe of dropdown menu](assets/readmeimgs/dropdownmenu.png)
+	 - ![Screenshot of dropdown menu](assets/readmeimgs/dropdown.png)
  - Landing Page
- - Saved Recipe
  - New Recipe
+	- 
+ 	- ![Wireframe of recipe creation](assets/readmeimgs/newrecipe.png)
+
+## Future Plans
  - Community Recipes
  - Generate Shopping List
  - Setting
  - Account
+ - Saved Recipe
 
 ## UX/UI
 
