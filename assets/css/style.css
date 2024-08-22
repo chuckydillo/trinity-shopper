@@ -4,6 +4,9 @@ body {
 
 
 /*index*/
+.index-logo {
+    text-align: center;
+}
 .index-navbar {
     text-align: center;
 }
